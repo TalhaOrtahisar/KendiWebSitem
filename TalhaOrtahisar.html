@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Talha Ortahisar CV</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            overflow-x: hidden;
+            background: #f4f4f9;
+        }
+        .sliver-app-bar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: #333;
+            padding: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: background 0.3s ease;
+            z-index: 1000;
+        }
+        .sliver-app-bar.scrolled {
+            background: #f3eeee;
+        }
+        .nav-links {
+            display: flex;
+            list-style: none;
+            padding: 0;
+        }
+        .nav-links li {
+            margin: 0 15px;
+        }
+        .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        .nav-links a:hover {
+            color: #ff9f43;
+        }
+        .hero {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: url('https://e1.pxfuel.com/desktop-wallpaper/802/144/desktop-wallpaper-access-granted-access-denied.jpg') no-repeat center center/cover;
+            color: #fff;
+            text-align: center;
+            animation: fadeIn 2s;
+        }
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+        .section {
+            padding: 100px 20px;
+            border-top: 5px solid #ff9f43;
+        }
+        .skills, .about, .projects, .contact {
+            padding: 80px 20px;
+            background: #fff;
+        }
+        .skills {
+            background: #f9fafc;
+        }
+        .about {
+            background: #fff;
+        }
+        .skills-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+        }
+        .skills-list .skill {
+            text-align: center;
+            margin: 20px;
+            padding: 30px;
+            border-radius: 10px;
+            background: linear-gradient(45deg, #ff9f43, #ff6b6b);
+            color: #fff;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+            animation: bounceIn 1.5s;
+        }
+        .skills-list .skill:hover {
+            transform: scale(1.1);
+        }
+        .projects {
+            background: #f4f4f9;
+            color: #333;
+        }
+        .project-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            justify-content: center;
+        }
+        .project {
+            padding: 20px;
+            border-radius: 10px;
+            background: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+            animation: fadeInUp 1.2s;
+        }
+        .project:hover {
+            transform: translateY(-10px);
+        }
+        .contact {
+            background: #222;
+            color: #fff;
+            text-align: center;
+            padding: 100px 20px;
+        }
+        .contact a {
+            color: #ff9f43;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .iletisim {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            
+        }
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .end{
+            text-align: center;
+             padding: 10px 0;
+            background:grey;
+            color: white;
+             position: relative;
+            bottom: 0;
+            width: 100%;
+      
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- Sliver App Bar -->
+    <nav class="sliver-app-bar animate__animated animate__fadeInDown">
+        <div class="container">
+            <div class="brand animate__animated animate__flipInX">
+                <h1 style="color: #f9fafc;">Talha Ortahisar</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#about">Hakkımda</a></li>
+                <li><a href="#skills">Yetenekler</a></li>
+                <li><a href="#projects">Projeler</a></li>
+                <li><a href="#contact">İletişim</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero animate__animated animate__zoomIn">
+        <div class="container">
+            <h2>Merhaba, Ben Talha Ortahisar</h2>
+            <h3>Bilgisayar Mühendisi | Siber Güvenlik Uzmanı | Yazılım Uzmanı</h3>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section animate__animated animate__fadeIn">
+        <div class="container">
+            <h2>Hakkımda</h2>
+            <p>Ben Talha Ortahisar, bilgisayar mühendisiyim ve yazılım geliştirmeye tutkulu biriyim. Modern teknolojileri kullanarak Siber Güvenlik kısmında kendimi geliştirmeye ve kendi alanımda daha özgün projeler üretmeye çalışıyorum. </p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section animate__animated animate__fadeIn">
+        <div class="container">
+            <h2>Yetenekler</h2>
+            <div class="skills-list">
+                <div class="skill animate__animated animate__pulse">
+                    <br>
+                    <p>Kali-Linux</p>
+                </div>
+                <div class="skill animate__animated animate__pulse">
+                   <br>
+                    <p>HTML</p>
+                </div>
+                <div class="skill animate__animated animate__pulse">
+                    <br>
+                    <p>CSS</p>
+                </div>
+                <div class="skill animate__animated animate__pulse">
+                    <br>
+                    <p>PHYTON</p>
+                </div>
+                <div class="skill animate__animated animate__pulse">
+                    <br>
+                    <p>C#</p>
+                </div>
+                <div class="skill animate__animated animate__pulse">
+                    <br>
+                    <p>C++</p>
+                </div>
+                <div class="skill animate__animated animate__pulse">
+                    <br>
+                    <p>Ressam</p>
+                </div>
+                <div class="skill animate__animated animate__pulse">
+                    <br>
+                    <p>Yöneticİ</p>
+                </div>
+                <div class="skill animate__animated animate__pulse">
+                    <br>
+                    <p>İngilizce-B1</p>
+                </div>
+                
+                    
+                   
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects section animate__animated animate__fadeInUp">
+        <div class="container">
+            <h2>Projeler</h2>
+            <div class="project-list">
+                <div class="project animate__animated animate__slideInUp">
+                    <h3>Kablosuz Ağlarda Haberleşme</h3>
+                    <p>Teknofest yarışmasında grupça sunduğumuz bu projenin amacı kablosuz iki cihaz arasında belli bir mesafede en hızlı ve en güvenli veri aktarımını sağlamaktır. </p>
+                </div>
+                <div class="project animate__animated animate__slideInUp">
+                    <h3>Hacker Master</h3>
+                    <p>Bir teknofest yarışması olup şahsi olarak katıldığım ve kendimi bu alanda geliştirdiğim bir projedir.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section animate__animated animate__fadeIn">
+        <div class="iletisim">
+            <h2>İletişim</h2>
+            <h4>Benimle iletişime geçmekten çekinmeyin.</h4>
+            <h4>Email: talhaortahisar@gmail.com</h4>
+            <h4>Numara: (+90) 545 789 1761</h4>
+        </div>
+         
+    </section>
+    <footer class="end">
+        <p>Tüm hakları saklıdır &copy; 2024 Talha Ortahisar</p>
+    </footer>
+
+    
+
+    <script>
+        // Navbar scroll animation
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.sliver-app-bar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+</html>
